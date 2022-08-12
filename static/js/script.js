@@ -1,3 +1,8 @@
+console.log('Connected');
+import Swiper from 'swiper';
+import 'swiper/css';
+
+
 $(function () {
 	// Anchor Target Scroll Animation
 
