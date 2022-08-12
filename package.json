@@ -17,12 +17,12 @@
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "glob": "^7.1.4",
+    "gulp": "^4.0.2",
     "gulp-inject-partials": "^1.0.5",
     "gulp-rename": "^1.4.0",
-    "gulp": "^4.0.2",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1",
-    "webpack": "^4.29.6"
+    "webpack-dev-server": "^3.2.1"
   },
   "browserslist": [
     "last 5 version"
@@ -54,5 +54,10 @@
         "**/*.template.html"
       ]
     }
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
+    "swiper": "^8.3.2"
   }
 }
