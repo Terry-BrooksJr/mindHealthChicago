@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -10,4 +10,4 @@ def home():
 
 @app.route('/blog')
 def blog():
-    return render_template('')
+    return render_template('blog_not_ready.jinja2')
