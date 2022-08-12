@@ -1,4 +1,4 @@
-const { src, dest, series, watch } = require('gulp');
+xconst { src, dest, series, watch } = require('gulp');
 const del = require('del');
 
 const { config, tasks } = require('../package.json');
