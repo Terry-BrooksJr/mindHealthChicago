@@ -58,6 +58,12 @@ jQuery.noConflict();
 
 var today = new Date();
 var year = today.getFullYear();
-
+// Dynamic Copyright Date
 var copyright = document.getElementById("copyright");
 copyright.innerHTML = "© MindHealth " + year;
+
+
+// Tooltip Enabler
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})

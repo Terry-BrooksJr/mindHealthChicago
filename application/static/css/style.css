@@ -9,7 +9,26 @@
 .pt-20 {
 	padding-top: 20px;
 }
+.blog-coming-soon{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+#developer-icon{
+	width: 10%;
+	position: static;
+	margin-bottom: -30px;
+}
+.developer-block{
+	color:silver;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+		align-items: center;
 
+}
 .pt-50 {
 	padding-top: 50px;
 }
@@ -57,7 +76,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(to top right bottom, #ffd700 50%, #000000 50%);
+	background: linear-gradient(to top, #ffd700, #000000);
 }
 
 /* ====================================
@@ -942,6 +961,9 @@ html {
 	text-align: center;
 	letter-spacing: 0.04rem;
 }
+#black{
+	background:
+}
 .section-sub-header:before {
 	content: "";
 	display: block;
@@ -952,7 +974,7 @@ html {
 	height: 1px;
 	transform: translate(-50%, -50%);
 	transform: translate3d(-50%, -50%, 0);
-	background: #71c3a4;
+	background: #ffd700;
 }
 .section-sub-header .sub-header__text {
 	position: relative;
@@ -965,10 +987,27 @@ body {
 	position: relative;
 	min-height: 100vh;
 	padding-top: 70px;
-	background-image: linear-gradient(to top, #336666, #99ffcc);
+	/* background-image: linear-gradient(to top, #336666, #99ffcc); */
 	background-attachment: fixed;
 }
-
+.btn-warning {
+    color: #fff;
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+.navbar-toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #ffd700;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: black;
+}
 .navbar {
 	height: 70px;
 	margin: 0;
@@ -1206,10 +1245,16 @@ body {
 	display: block;
 	margin: 0 auto;
 	padding: 8px 0;
-	color: #71c3a4;
+	color: #ffd700;
 	text-align: center;
 	outline: none !important;
 }
+.black-yellow-gradient{
+	border: 2px solid #ffd700;
+	width: 100%;
+	padding-top: 30px;
+}
+
 @media screen and (min-width: 769px) {
 	.profile-link {
 		margin: 0 auto 0 0;

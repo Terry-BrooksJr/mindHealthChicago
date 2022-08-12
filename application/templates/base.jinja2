@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <title>Mind Health - Chicago - {% block title %}{% endblock %}</title>
-<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" type="image/x-icon" href={{ url_for('static', filename='/images/favicon.ico') }}>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-<link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
+<link rel="stylesheet" href={{ url_for('static', filename="css/style.css") }}>
 
 </head>
 <body>
@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="logo-link-brand">
-					<a id="logo-link" href="#home">
+					<a id="logo-link" href={{ url_for('home') }}>
 						<img id="logo" src="https://assets.codepen.io/6554302/IMG_0349_edited+%283%29.png" alt="" />
 						<span id="logo-font-black">Mind</span><span id="logo-font-yellow">Health</span>
 					</a>
@@ -38,10 +38,10 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about-us">About Us</a></li>
-					<li><a href="#our-service">Our Service</a></li>
-					<li><a href="#blog">Blog</a></li>
-					<li><a href="#contact-us">Contact Us</a></li>
+					<li><a href="{% if blog %} {{ url_for('home') }} {% else %} #about-us {% endif %}">About Us</a></li>
+					<li><a href="{% if blog %} {{ url_for('home') }} {% else %} #our-service {% endif %}">Our Service</a></li>
+					<li><a href= {{ url_for('blog') }}>Blog</a></li>
+					<li><a href="{% if blog %} {{ url_for('home') }} {% else %} #contact-us{% endif %}">Contact Us</a></li>
 					<li id="button-list">
 						<button id="btn-booking" type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-book-an-appointment">Book <br>
 							An <br>
@@ -78,6 +78,13 @@
 					</p>
 					<p id='copyright'>
 					</p>
+					<div class="developer-block">
+					<a href="https://www.brooksjr.com">
+						<img id='developer-icon' src="https://assets.codepen.io/6554302/Blackberry+Py_LOGO-12.png" alt="Blackberry Py Development Logo" />
+						</a>
+						<sub>Developed and Maintained by Blackberry-Py Dev, LLC.</sub>
+						{# TODO: Add Bug Reporting Functionality  #}
+					</div>
 				</div><!-- /.col sm 12 -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
