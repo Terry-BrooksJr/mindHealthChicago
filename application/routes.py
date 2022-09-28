@@ -14,7 +14,8 @@ def home():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog_not_ready.jinja2', blog=True)
+    form = ClientIntrestForm()
+    return render_template('blog_not_ready.jinja2', blog=True, form=form)
 
 
 @app.route('/submit')

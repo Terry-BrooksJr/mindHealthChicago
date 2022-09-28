@@ -961,9 +961,7 @@ html {
 	text-align: center;
 	letter-spacing: 0.04rem;
 }
-#black{
-	background:
-}
+
 .section-sub-header:before {
 	content: "";
 	display: block;
@@ -1382,7 +1380,7 @@ footer p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #36454f;
+	background-color: #000000;
 	z-index: 99;
 	height: 100%;
 }
@@ -1393,7 +1391,7 @@ footer p {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	background-image: url(https://assets.codepen.io/6554302/Rapid_preloader+3.gif);
+	background-image: url("https://assets.codepen.io/6554302/preloader.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;

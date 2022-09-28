@@ -16,8 +16,10 @@ def valid_phone(field):
         search = re.search(pattern, number)
     if search == None:
         raise ValidationError('Invaild Phone Number')
+        return False
     else:
         if len(search.group()) == 10:
             return True
         else:
             raise ValidationError('Invaild Phone Number')
+

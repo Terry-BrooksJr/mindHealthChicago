@@ -67,3 +67,51 @@ copyright.innerHTML = "© MindHealth " + year;
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 })
+
+const phoneFormat = (input) => {
+	//check if the string is a number (doesn’t include characters or letters) and not null or undefined\
+	//check if the input is a string if not convert it into a string
+	//check if the input length is 10 (us number is 10 digits)
+	//if it is
+	//format it to xxx-xxx-xxxx
+	//if not check if it is less than 10
+	//return error was not supplied enough numbers please pass a 10 digit number
+	//if not check if length is greater than 10
+	//return was supplied too many numbers please pass a 10 digit number
+	//if not send something went wrong error for a catch all just in case
+}
+function numberValidator(number){
+	const number = Document.getElementById('number')
+	const pattern = new RegExp('1?\d{3}\d{3}\d{4}');
+	if (number[0] == "1"){
+		test_number = number.substring(1)
+		search = test_number.search(pattern)
+	} else {
+		search = number.search(pattern)
+	}
+	if(search = -1){
+		
+	}
+}
+function numberValidator(number){
+	const number = Document.getElementById('number')
+	const pattern = new RegExp('1?\d{3}\d{3}\d{4}');
+	if (number[0] == "1"){
+		test_number = number.substring(1)``
+def valid_phone(field):
+number = field.data
+number = number.translate(str.maketrans("", "", string.punctuation))
+pattern = r"1?\d{3}\d{3}\d{4}"
+number = number.strip()
+if number[0] == "1":
+	test_number = number[1:]
+search = re.search(pattern, test_number)
+    else:
+search = re.search(pattern, number)
+if search == None:
+        raise ValidationError('Invaild Phone Number')
+    else:
+if len(search.group()) == 10:
+	return True
+else:
+            raise ValidationError('Invaild Phone Number')
